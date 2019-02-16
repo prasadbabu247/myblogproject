@@ -1,0 +1,195 @@
+Django	-->2.1.7-->	2.1.7
+Pillow	===>>5.4.1	====>>5.4.1
+certifi	=====>>2018.11.29======>>	2018.11.29
+chardet	====>3.0.4	====>3.0.4
+django-crispy-forms===>	1.7.2	=====>1.7.2
+idna	====>>2.8 ====>	2.8
+pip	====>>19.0.2	====>19.0.2
+pytz	====>>2018.9=====>>	2018.9
+requests	====>>2.21.0====>>	2.21.0
+setuptools	====>>39.1.0=====>>	40.8.0
+urllib3	=====>>1.24.1	====>>1.24.1
+
+
+
+19:01 ~ $ mkvirtualenv --python=python3.7 myconf
+Running virtualenv with interpreter /usr/bin/python3.7
+Using base prefix '/usr'
+/usr/local/lib/python2.7/dist-packages/virtualenv.py:1041: DeprecationWarning: the imp module is deprecated in favour of importlib; see th
+e module's documentation for alternative uses
+  import imp
+New python executable in /home/prasadbabu/.virtualenvs/myconf/bin/python3.7
+Also creating executable in /home/prasadbabu/.virtualenvs/myconf/bin/python
+Installing setuptools, pip, wheel...done.
+virtualenvwrapper.user_scripts creating /home/prasadbabu/.virtualenvs/myconf/bin/predeactivate
+virtualenvwrapper.user_scripts creating /home/prasadbabu/.virtualenvs/myconf/bin/postdeactivate
+virtualenvwrapper.user_scripts creating /home/prasadbabu/.virtualenvs/myconf/bin/preactivate
+virtualenvwrapper.user_scripts creating /home/prasadbabu/.virtualenvs/myconf/bin/postactivate
+virtualenvwrapper.user_scripts creating /home/prasadbabu/.virtualenvs/myconf/bin/get_env_details
+(myconf) 19:05 ~ $ pip list
+Package    Version
+---------- -------
+pip        19.0.2 
+setuptools 40.8.0 
+wheel      0.33.0 
+(myconf) 19:08 ~ $ pip install django
+Looking in links: /usr/share/pip-wheels
+Collecting django
+  Downloading https://files.pythonhosted.org/packages/c7/87/fbd666c4f87591ae25b7bb374298e8629816e87193c4099d3608ef11fab9/Django-2.1.7-py3-
+none-any.whl (7.3MB)
+    100% |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 7.3MB 1.0MB/s 
+Collecting pytz (from django)
+  Using cached https://files.pythonhosted.org/packages/61/28/1d3920e4d1d50b19bc5d24398a7cd85cc7b9a75a490570d5a30c57622d34/pytz-2018.9-py2.
+py3-none-any.whl
+Installing collected packages: pytz, django
+Successfully installed django-2.1.7 pytz-2018.9
+(myconf) 19:11 ~ $ pip install pillow
+Looking in links: /usr/share/pip-wheels
+Collecting pillow
+  Downloading https://files.pythonhosted.org/packages/ae/2a/0a0ab2833e5270664fb5fae590717f867ac6319b124160c09f1d3291de28/Pillow-5.4.1-cp37
+-cp37m-manylinux1_x86_64.whl (2.0MB)
+    100% |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 2.0MB 1.6MB/s 
+Installing collected packages: pillow
+Successfully installed pillow-5.4.1
+(myconf) 19:15 ~ $ pip install certifi
+Looking in links: /usr/share/pip-wheels
+Collecting certifi
+  Using cached https://files.pythonhosted.org/packages/9f/e0/accfc1b56b57e9750eba272e24c4dddeac86852c2bebd1236674d7887e8a/certifi-2018.11.
+29-py2.py3-none-any.whl
+Installing collected packages: certifi
+Successfully installed certifi-2018.11.29
+(myconf) 19:16 ~ $ pip ubstall chardet
+ERROR: unknown command "ubstall" - maybe you meant "uninstall"
+(myconf) 19:17 ~ $ pip install chardet                                                                                                    
+Looking in links: /usr/share/pip-wheels
+Collecting chardet
+Installing collected packages: chardet
+Successfully installed chardet-3.0.4
+(myconf) 19:17 ~ $ pip install idna
+Looking in links: /usr/share/pip-wheels
+Collecting idna
+  Using cached https://files.pythonhosted.org/packages/14/2c/cd551d81dbe15200be1cf41cd03869a46fe7226e7450af7a6545bfc474c9/idna-2.8-py2.py3
+-none-any.whl
+Installing collected packages: idna
+Successfully installed idna-2.8
+(myconf) 19:18 ~ $ pip install urllib3
+Looking in links: /usr/share/pip-wheels
+Collecting urllib3
+  Using cached https://files.pythonhosted.org/packages/62/00/ee1d7de624db8ba7090d1226aebefab96a2c71cd5cfa7629d6ad3f61b79e/urllib3-1.24.1-p
+y2.py3-none-any.whl
+Installing collected packages: urllib3
+Successfully installed urllib3-1.24.1
+(myconf) 19:18 ~ $ pip install setuptools
+Looking in links: /usr/share/pip-wheels
+Requirement already satisfied: setuptools in ./.virtualenvs/myconf/lib/python3.7/site-packages (40.8.0)
+(myconf) 19:19 ~ $ pip install django-crispy-forms
+Looking in links: /usr/share/pip-wheels
+Collecting django-crispy-forms
+  Downloading https://files.pythonhosted.org/packages/9a/05/6bad05742d185ec2fabfa4deab05cafde286eb3f383fba24b3674340aca2/django_crispy_for
+Successfully installed django-crispy-forms-1.7.2
+(myconf) 19:20 ~ $ pip install requests
+Looking in links: /usr/share/pip-wheels
+Collecting requests
+  Using cached https://files.pythonhosted.org/packages/7d/e3/20f3d364d6c8e5d2353c72a67778eb189176f08e873c9900e10c0287b84b/requests-2.21.0-
+py2.py3-none-any.whl
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in ./.virtualenvs/myconf/lib/python3.7/site-packages (from requests) (3.0.4)
+Requirement already satisfied: idna<2.9,>=2.5 in ./.virtualenvs/myconf/lib/python3.7/site-packages (from requests) (2.8)
+Requirement already satisfied: urllib3<1.25,>=1.21.1 in ./.virtualenvs/myconf/lib/python3.7/site-packages (from requests) (1.24.1)
+Requirement already satisfied: certifi>=2017.4.17 in ./.virtualenvs/myconf/lib/python3.7/site-packages (from requests) (2018.11.29)
+Installing collected packages: requests
+Successfully installed requests-2.21.0
+(myconf) 19:20 ~ $ git clone https://github.com/prasadbabu247/myblogprj.git
+Cloning into 'myblogprj'...
+remote: Enumerating objects: 8421, done.
+remote: Counting objects: 100% (8421/8421), done.
+remote: Compressing objects: 100% (4955/4955), done.
+remote: Total 8421 (delta 2447), reused 8421 (delta 2447), pack-reused 0
+Receiving objects: 100% (8421/8421), 17.48 MiB | 295.00 KiB/s, done.
+Resolving deltas: 100% (2447/2447), done.
+Checking connectivity... done.
+Checking out files: 100% (6476/6476), done.
+(myconf) 19:27 ~ $ ls
+README.txt  geographyinfo  myblogprj
+(myconf) 19:31 ~ $ cd myblogprj
+(myconf) 19:32 ~/myblogprj (master)$ ls
+DJANGO_BLOGPROJECT
+(myconf) 19:32 ~/myblogprj (master)$ cd DJANGO_BLOGPROJECT
+(myconf) 19:32 ~/myblogprj/DJANGO_BLOGPROJECT (master)$ python manage,py makemigrations
+(null): can't open file 'manage,py': [Errno 2] No such file or directory
+(myconf) 19:33 ~/myblogprj/DJANGO_BLOGPROJECT (master)$ python manage,py makemigrations
+(null): can't open file 'manage,py': [Errno 2] No such file or directory
+(myconf) 19:33 ~/myblogprj/DJANGO_BLOGPROJECT (master)$ python manage.py makemigrations                                                   
+No changes detected
+(myconf) 19:34 ~/myblogprj/DJANGO_BLOGPROJECT (master)$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, blog, contenttypes, sessions, users
+Running migrations:
+  No migrations to apply.
+(myconf) 19:34 ~/myblogprj/DJANGO_BLOGPROJECT (master)$ pwd
+/home/prasadbabu/myblogprj/DJANGO_BLOGPROJECT
+(myconf) 19:35 ~/myblogprj/DJANGO_BLOGPROJECT (master)$ 
+
+
+
+siurce cude:
+/home/prasadbabu/myblogprj/DJANGO_BLOGPROJECT
+
+
+/home/prasadbabu/.virtualenvs/myconf
+
+
+
+
+import os
+
+import sys
+
+path = '/home/prasadbabu/myblogprj/DJANGO_BLOGPROJECT'
+
+if path not in sys.path:
+    
+       sys.path.append(path)
+
+os.chdir(path)
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE','DJANGO_BLOGPROJECT.settings')
+
+import django
+django.setup()
+
+#
+
+#os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+#
+
+## then:
+
+from django.core.wsgi import get_wsgi_application
+
+application = get_wsgi_application()
+
+
+
+
+git hub pushing:
+
+
+
+admin@Sony MINGW64 /d/myblog (master)
+$ git remote add origin https://github.com/prasadbabu247/myblogprj.git
+
+admin@Sony MINGW64 /d/myblog (master)
+$ git push -u origin master
+Enumerating objects: 8421, done.
+Counting objects: 100% (8421/8421), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4955/4955), done.
+Writing objects: 100% (8421/8421), 17.48 MiB | 1.28 MiB/s, done.
+Total 8421 (delta 2447), reused 8421 (delta 2447)
+remote: Resolving deltas: 100% (2447/2447), done.
+To https://github.com/prasadbabu247/myblogprj.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+admin@Sony MINGW64 /d/myblog (master)
